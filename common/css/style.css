@@ -225,10 +225,11 @@ html,body{
 	font-size: 16px;
 	
 }
-.mieuta1{
+.mieuta-indam{
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 14px;
-
+	font-weight: bold;
+	font-size: 1rem;
 	
 }
 body{
@@ -1590,6 +1591,7 @@ li.current .sub-nav-links{
 	padding: 18px 5% 30px;
 	bottom: 20px;
 	font-size: 1.5em;
+	font-family: 'Be Vietnam', sans-serif;
 }
 
 .entry .meta .date:after,
@@ -1610,6 +1612,7 @@ li.current .sub-nav-links{
 	padding: 0 5% 15px;
 	bottom: 40px;
 	font-size: 1.8em;
+	padding-bottom: 10%;
 }
 
 .entry .meta .title,
