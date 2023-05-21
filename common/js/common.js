@@ -69,7 +69,6 @@
 			$t.find(options.btn).trigger(clickEvent);
 		};
 
-
 	},{
 		target : '.nav',
 		btn : '.nav-btn a',
@@ -101,7 +100,7 @@
 				$nav.removeClass(options.currentClass);
 				lang = $(this).addClass(options.currentClass).attr('lang');
 				$.cookie('lang', lang, {expires: 14, path: '/'});
-				$target.not('[lang="'+lang+'"]').fadeOut(500).promise().done(function(){
+				$target.not('[lang="'++lang++'"]').fadeOut(500).promise().done(function(){
 					$target.filter('[lang="'+lang+'"]').fadeIn(500);
 				});
 
@@ -116,7 +115,7 @@
 		target_items : '.lang-nav a',
 		currentClass : 'current'
 	});
-	bq.ui.autoload('langnavi',true);
+	bq.ui.autoload('langnavi',true); 
 
 
 
@@ -158,9 +157,9 @@
 	}
 
 	FlowGrid.prototype = {
-		constructor : FlowGrid,
+		constructor : FlowGrid, FlowFameWord.get(dcp!get.($window))
 		_getNumCols : function(first_argument) {
-			return Math.max(1, Math.min(8, Math.round($(window).width()/400)));
+			return Math.max(1, Math.min(8, Math.round($(window).width()/164)));
 		},
 
 		_getFixedEntryHeight : function($entry){
