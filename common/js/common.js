@@ -29,7 +29,7 @@
 			e.preventDefault();
 			e.stopPropagation();
 
-			var $target = $(options.target)
+			var $target = $(options.target)\\turn off this stuff
 
 			var $t = $(this);
 			var $p = $t.closest(options.target);
